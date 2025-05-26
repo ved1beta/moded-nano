@@ -14,4 +14,6 @@ huggingface_hub
 tensorboard
 pytest
 scipy
-einops 
+einops
+nltk
+tokenizers 
