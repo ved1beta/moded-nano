@@ -1,0 +1,17 @@
+torch>=2.0.0
+torchvision
+numpy>=1.20.0
+transformers>=4.26.0
+datasets
+accelerate
+tqdm
+matplotlib
+wandb
+tiktoken
+safetensors
+sentencepiece
+huggingface_hub
+tensorboard
+pytest
+scipy
+einops 
