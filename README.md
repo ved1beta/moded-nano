@@ -14,7 +14,7 @@ A lightweight implementation of GPT training, heavily referenced from [modded na
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/moded-nano.git
+git clone https://github.com/ved1beta/moded-nano.git
 cd moded-nano
 
 # Install dependencies
