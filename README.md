@@ -80,7 +80,7 @@ The project includes an efficient data processing pipeline (`data/data.py`) that
 - tqdm
 
 ## Contribution
-Thanks to [हिमांशु](https://github.com/CodeMan62)
+Contributions are welcome feel free to report a issue or feature request also feel free to create a PR :) ❤️
 
 
 ## License
