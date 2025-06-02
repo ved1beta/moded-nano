@@ -1,20 +1,19 @@
 # Moded-Nano
 
-A lightweight implementation of GPT training, heavily referenced from [modded nanogpt](https://github.com/kellerjordan/nanogpt) by Keller Jordan. This project focuses on improved data loaders, Hugging Face dataset support, and optimized performance for consumer GPUs.
+A lightweight implementation of GPT training, heavily referenced from [modded nanogpt](https://github.com/kellerjordan/nanogpt) by Keller Jordan. This project focuses on improved data loaders, Hugging Face dataset support, and support for training on consumer gpus 
 
 ## Features
 
 - **Improved Data Loaders**: Efficient data processing and tokenization
 - **Hugging Face Integration**: Direct support for Hugging Face datasets
 - **Synthetic Dataset Support**: Built-in support for synthetic data generation
-- **Consumer GPU Optimization**: Designed to run efficiently on consumer-grade GPUs
 - **Flexible Configuration**: Customizable training parameters
 
 ## Installation
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/moded-nano.git
+git clone https://github.com/ved1beta/moded-nano.git
 cd moded-nano
 
 # Install dependencies
@@ -62,11 +61,11 @@ python3 train_gpt.py --dataset huggingface --hf_dataset imdb --hf_text_column te
 
 ## Data Processing
 
-The project includes an efficient data processing pipeline (`data/data.py`) that:
-1. Downloads and processes datasets
-2. Tokenizes text data
-3. Creates binary shards for efficient training
-4. Supports parallel processing for faster data preparation
+The project includes data processing pipeline (`data/data.py`) that:
+1. Download
+2. Tokenize
+3. Creates binary
+4. parallel processing
 
 ## Requirements
 
