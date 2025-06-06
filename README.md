@@ -2,12 +2,25 @@
 
 A lightweight implementation of GPT training, heavily referenced from [modded nanogpt](https://github.com/kellerjordan/nanogpt) by Keller Jordan. This project focuses on improved data loaders, Hugging Face dataset support, and support for training on consumer gpus 
 
-## Features
+# Features
 
-- **Improved Data Loaders**: Efficient data processing and tokenization
-- **Hugging Face Integration**: Direct support for Hugging Face datasets
-- **Synthetic Dataset Support**: Built-in support for synthetic data generation
-- **Flexible Configuration**: Customizable training parameters
+## GPU 
+- detection for GPU capabilities(CUDA, FP8, FlexAttention)
+- fall back for CPU training if no GPU is available
+
+## Data Flexibility
+- Supports for datasets synthetic and Hugging Face datasets
+- torkenization and data processing pipeline for HF datasets
+
+## Command Line Interface
+- added more command line options for training
+
+## FP8 Support
+- support for FP8 training where supported 
+- fallback if not supported
+
+
+
 
 ## Installation
 
@@ -67,16 +80,6 @@ The project includes data processing pipeline (`data/data.py`) that:
 3. Creates binary
 4. parallel processing
 
-## Requirements
-
-- Python 3.8+
-- PyTorch
-- Transformers
-- Datasets
-- NLTK
-- tiktoken
-- numpy
-- tqdm
 
 ## Contribution
 Contributions are welcome feel free to report a issue or feature request also feel free to create a PR :) ❤️

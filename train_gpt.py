@@ -23,15 +23,11 @@ from torch import Tensor, nn
 import torch.nn.functional as F
 import torch.distributed as dist
 
-# Check if the GPU supports various features
 def check_gpu_features():
-    # Check if CUDA is available
     has_cuda = torch.cuda.is_available()
     
-    # Check if FP8 is supported
     has_fp8 = has_cuda and hasattr(torch, 'float8_e4m3fn')
     
-    # Check if FlexAttention is available
     try:
         from torch.nn.attention.flex_attention import BlockMask, flex_attention
         has_flex_attention = True
@@ -40,16 +36,13 @@ def check_gpu_features():
         
     return has_cuda, has_fp8, has_flex_attention
 
-# Check GPU features
 HAS_CUDA, HAS_FP8, HAS_FLEX_ATTENTION = check_gpu_features()
 
-# Import or define dummy FlexAttention if not available
 if HAS_FLEX_ATTENTION:
     from torch.nn.attention.flex_attention import BlockMask, flex_attention
 else:
     print("FlexAttention not available, will use standard attention")
     
-    # Dummy BlockMask class for compatibility
     class BlockMask:
         @classmethod
         def from_kv_blocks(cls, *args, **kwargs):
