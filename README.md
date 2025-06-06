@@ -1,22 +1,22 @@
 # Moded-Nano
 
-A lightweight implementation of GPT training, heavily referenced from [modded nanogpt](https://github.com/kellerjordan/nanogpt) by Keller Jordan. This project focuses on improved data loaders, Hugging Face dataset support, and support for training on consumer gpus 
+A lightweight implementation of GPT training, heavily referenced from [modded nanogpt](https://github.com/kellerjordan/nanogpt) by Keller Jordan. This project focuses on improved data loaders, Hugging Face dataset support, and support for training on consumer GPUs 
 
 # Features
 
 ## GPU 
 - detection for GPU capabilities(CUDA, FP8, FlexAttention)
-- fall back for CPU training if no GPU is available
+- Fallback for CPU training if no GPU is available
 
 ## Data Flexibility
-- Supports for datasets synthetic and Hugging Face datasets
-- torkenization and data processing pipeline for HF datasets
+- Support for synthetic datasets and Hugging Face datasets
+- Torkenization and data processing pipeline for HF datasets
 
 ## Command Line Interface
-- added more command line options for training
+- added more command-line options for training
 
 ## FP8 Support
-- support for FP8 training where supported 
+- support for FP8 training, where supported 
 - fallback if not supported
 
 
